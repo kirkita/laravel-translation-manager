@@ -1,6 +1,6 @@
 {
-  "name": "barryvdh/laravel-translation-manager",
-  "description": "Manage Laravel Translations",
+  "name": "kirkita/laravel-translation-manager",
+  "description": "Manage Laravel Translations Fork from barryvdh",
   "keywords": [
     "laravel",
     "translations",
