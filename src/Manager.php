@@ -217,7 +217,11 @@ class Manager
         // Add the translations to the database, if not existing.
         foreach ( $groupKeys as $key ) {
             // Split the group and item
-            list( $group, $item ) = explode( '.', $key, 2 );
+            if(strpos($key, '.') === false) {
+                ///TODO: laravel log
+            } else {
+                list( $group, $item ) = explode( '.', $key, 2 );
+            }
             $this->missingKey( '', $group, $item );
         }
 
